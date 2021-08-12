@@ -7,8 +7,7 @@ WHERE il.unit_price > 0.99;
 SELECT i.invoice_date, c.first_name, c.last_name, i.total
 FROM invoice i
 JOIN customer c ON i.customer_id = c.customer_id;
-
-
+ 
 SELECT c.first_name, c.last_name, e.first_name, e.last_name
 FROM customer c
 JOIN employee e ON c.support_rep_id = e.employee_id;
